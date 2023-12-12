@@ -1,0 +1,12 @@
+name: sdl_required
+description: SDL minimum required branch protection policy
+resource: repository
+where: 
+configuration:
+  branchProtectionRules:
+  - branchNamePattern: "~default~"
+    requiredApprovingReviewsCount: 1
+    requiredStatusChecks:
+    - GitOps/AdvancedSecurity
+    isAdminEnforced: true
+    allowsForcePushes: true
