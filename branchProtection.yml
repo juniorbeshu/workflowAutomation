@@ -1,5 +1,13 @@
-eternal:
-  requiredReviewCount: 0
-  requiredStatusChecks: ["Trufflehog"]
-  patterns:
-    -'^main$'
+name: sdl_required
+description: SDL minimum required branch protection policy
+resource: repository
+where: 
+configuration:
+  branchProtectionRules:
+  - branchNamePattern: "~default~"
+    requiredApprovingReviewsCount: 1
+    requiresStrictStatusChecks: true
+    requiredStatusChecks:
+    - GitOps/AdvancedSecurity
+    isAdminEnforced: true
+    allowsForcePushes: false
