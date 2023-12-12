@@ -4,7 +4,7 @@ resource: repository
 where: 
 configuration:
   branchProtectionRules:
-  - branchNamePattern: "~default~"
+  - branchNamePattern: "main"
     requiredApprovingReviewsCount: 1
     requiredStatusChecks:
     - GitOps/AdvancedSecurity
