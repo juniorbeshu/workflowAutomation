@@ -14,8 +14,7 @@ configuration:
     # A team name
     - Nathaniel Asfaw
     requiresStrictStatusChecks: true
-    requiredStatusChecks:
-    - GitOps/AdvancedSecurity
+    requiredStatusChecks: ["GitOps/AdvancedSecurity"]
     restrictsPushes: true
     whoCanPush:
     # A username
